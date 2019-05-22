@@ -1,0 +1,70 @@
+20/05/2019 08:36:24 devpinoyLogger Config File Loaded
+20/05/2019 08:36:24 devpinoyLogger Object Repository File Loaded
+20/05/2019 08:36:24 devpinoyLogger Config File Loaded
+20/05/2019 08:36:24 devpinoyLogger Object Repository File Loaded
+20/05/2019 08:36:24 devpinoyLogger Config File Loaded
+20/05/2019 08:36:24 devpinoyLogger Object Repository File Loaded
+20/05/2019 08:36:24 devpinoyLogger Config File Loaded
+20/05/2019 08:36:24 devpinoyLogger Object Repository File Loaded
+20/05/2019 08:36:24 devpinoyLogger Config File Loaded
+20/05/2019 08:36:24 devpinoyLogger Object Repository File Loaded
+20/05/2019 08:36:48 devpinoyLogger Thread: 713ca89bfbfd
+20/05/2019 08:36:48 devpinoyLogger Browser: firefox-->Clicking on element: bmlbtn_CSS
+20/05/2019 08:36:49 devpinoyLogger Thread: 713ca89bfbfd
+20/05/2019 08:36:49 devpinoyLogger Browser: firefox-->Clicking on element: addcust_CSS
+20/05/2019 08:36:49 devpinoyLogger Thread: 713ca89bfbfd
+20/05/2019 08:36:49 devpinoyLogger Browser: firefox-->Typing in element: firstname_CSS
+20/05/2019 08:36:49 devpinoyLogger Thread: 713ca89bfbfd
+20/05/2019 08:36:49 devpinoyLogger Browser: firefox-->Typing in element: lastname_XPATH
+20/05/2019 08:36:49 devpinoyLogger Thread: 713ca89bfbfd
+20/05/2019 08:36:49 devpinoyLogger Browser: firefox-->Typing in element: postcode_CSS
+20/05/2019 08:36:49 devpinoyLogger Thread: 713ca89bfbfd
+20/05/2019 08:36:49 devpinoyLogger Browser: firefox-->Clicking on element: addbtn_CSS
+20/05/2019 08:37:16 devpinoyLogger Thread: 77bb40b53115
+20/05/2019 08:37:16 devpinoyLogger Browser: firefox-->Clicking on element: bmlbtn_CSS
+20/05/2019 08:37:17 devpinoyLogger Thread: 77bb40b53115
+20/05/2019 08:37:17 devpinoyLogger Browser: firefox-->Clicking on element: openacc_CSS
+20/05/2019 08:37:17 devpinoyLogger Thread: cf580017de34e87fb6ad6d2027a84834
+20/05/2019 08:37:17 devpinoyLogger Browser: firefox-->Clicking on element: bmlbtn_CSS
+20/05/2019 08:37:18 devpinoyLogger Thread: cf580017de34e87fb6ad6d2027a84834
+20/05/2019 08:37:18 devpinoyLogger Browser: firefox-->Clicking on element: openacc_CSS
+20/05/2019 08:37:18 devpinoyLogger Thread: 77bb40b53115
+20/05/2019 08:37:18 devpinoyLogger Browser: firefox-->Selecting the element: custid_CSS
+20/05/2019 08:37:19 devpinoyLogger Thread: cf580017de34e87fb6ad6d2027a84834
+20/05/2019 08:37:19 devpinoyLogger Browser: firefox-->Selecting the element: custid_CSS
+20/05/2019 08:37:19 devpinoyLogger Thread: 77bb40b53115
+20/05/2019 08:37:19 devpinoyLogger Browser: firefox-->Selecting the element: currency_CSS
+20/05/2019 08:37:19 devpinoyLogger Thread: cf580017de34e87fb6ad6d2027a84834
+20/05/2019 08:37:19 devpinoyLogger Browser: firefox-->Selecting the element: currency_CSS
+20/05/2019 08:37:31 devpinoyLogger Thread: de1e8862cb973494c3fc6dee32aacb17
+20/05/2019 08:37:31 devpinoyLogger Browser: firefox-->Clicking on element: bmlbtn_CSS
+20/05/2019 08:37:32 devpinoyLogger Thread: de1e8862cb973494c3fc6dee32aacb17
+20/05/2019 08:37:32 devpinoyLogger Browser: firefox-->Clicking on element: addcust_CSS
+20/05/2019 08:37:32 devpinoyLogger Thread: de1e8862cb973494c3fc6dee32aacb17
+20/05/2019 08:37:32 devpinoyLogger Browser: firefox-->Typing in element: firstname_CSS
+20/05/2019 08:37:32 devpinoyLogger Thread: de1e8862cb973494c3fc6dee32aacb17
+20/05/2019 08:37:32 devpinoyLogger Browser: firefox-->Typing in element: lastname_XPATH
+20/05/2019 08:37:33 devpinoyLogger Thread: de1e8862cb973494c3fc6dee32aacb17
+20/05/2019 08:37:33 devpinoyLogger Browser: firefox-->Typing in element: postcode_CSS
+20/05/2019 08:37:33 devpinoyLogger Thread: de1e8862cb973494c3fc6dee32aacb17
+20/05/2019 08:37:33 devpinoyLogger Browser: firefox-->Clicking on element: addbtn_CSS
+20/05/2019 08:37:41 devpinoyLogger Thread: 3d7c6fd47ef14f8792a8ccf6b740b32a
+20/05/2019 08:37:41 devpinoyLogger Browser: firefox-->Clicking on element: bmlbtn_CSS
+20/05/2019 08:37:41 devpinoyLogger Thread: 3d7c6fd47ef14f8792a8ccf6b740b32a
+20/05/2019 08:37:41 devpinoyLogger Browser: firefox-->Clicking on element: addcust_CSS
+20/05/2019 08:37:41 devpinoyLogger Thread: 3d7c6fd47ef14f8792a8ccf6b740b32a
+20/05/2019 08:37:41 devpinoyLogger Browser: firefox-->Typing in element: firstname_CSS
+20/05/2019 08:37:42 devpinoyLogger Thread: 3d7c6fd47ef14f8792a8ccf6b740b32a
+20/05/2019 08:37:42 devpinoyLogger Browser: firefox-->Typing in element: lastname_XPATH
+20/05/2019 08:37:43 devpinoyLogger Thread: 3d7c6fd47ef14f8792a8ccf6b740b32a
+20/05/2019 08:37:43 devpinoyLogger Browser: firefox-->Typing in element: postcode_CSS
+20/05/2019 08:37:43 devpinoyLogger Thread: 7735a71e53a6
+20/05/2019 08:37:43 devpinoyLogger Browser: firefox-->Clicking on element: bmlbtn_CSS
+20/05/2019 08:37:43 devpinoyLogger Thread: 3d7c6fd47ef14f8792a8ccf6b740b32a
+20/05/2019 08:37:43 devpinoyLogger Browser: firefox-->Clicking on element: addbtn_CSS
+20/05/2019 08:37:43 devpinoyLogger Thread: 7735a71e53a6
+20/05/2019 08:37:43 devpinoyLogger Browser: firefox-->Clicking on element: openacc_CSS
+20/05/2019 08:37:44 devpinoyLogger Thread: 7735a71e53a6
+20/05/2019 08:37:44 devpinoyLogger Browser: firefox-->Selecting the element: custid_CSS
+20/05/2019 08:37:45 devpinoyLogger Thread: 7735a71e53a6
+20/05/2019 08:37:45 devpinoyLogger Browser: firefox-->Selecting the element: currency_CSS

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="133352" started-at="2019-05-08T06:16:09Z" finished-at="2019-05-08T06:18:22Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@5f2108b5]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="133352" started-at="2019-05-08T06:16:09Z" finished-at="2019-05-08T06:18:22Z">
+      <class name="runner.RunCuke">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunCuke@5f2108b5]" name="setUpClass" is-config="true" duration-ms="199" started-at="2019-05-08T06:16:09Z" finished-at="2019-05-08T06:16:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="writeExtentReport()[pri:0, instance:runner.RunCuke@5f2108b5]" name="writeExtentReport" is-config="true" duration-ms="15" started-at="2019-05-08T06:16:09Z" finished-at="2019-05-08T06:16:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeExtentReport -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@5f2108b5]" name="runScenario" duration-ms="66414" started-at="2019-05-08T06:16:09Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-05-08T06:17:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Vaidate Search Cars page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Acceptance Testing to validate that"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@5f2108b5]" name="runScenario" duration-ms="65756" started-at="2019-05-08T06:17:15Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-05-08T06:18:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Vaidate Used Cars search page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Acceptance Testing to validate that"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCuke@5f2108b5]" name="tearDownClass" is-config="true" duration-ms="864" started-at="2019-05-08T06:18:21Z" finished-at="2019-05-08T06:18:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RunCuke -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

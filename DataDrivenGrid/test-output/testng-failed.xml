@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Bank Manager Test Suite]" parallel="tests">
+  <test thread-count="5" name="Open Account Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.w2a.suite.bankmanager.test.OpenAccountTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="openAccountTest" invocation-numbers="1 0 2"/>
+        </methods>
+      </class> <!-- com.w2a.suite.bankmanager.test.OpenAccountTest -->
+    </classes>
+  </test> <!-- Open Account Test(failed) -->
+</suite> <!-- Failed suite [Bank Manager Test Suite] -->

@@ -1,0 +1,17 @@
+09/05/2019 12:00:15 devpinoyLogger Chrome launched!!
+09/05/2019 12:00:29 devpinoyLogger Clicking on an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> css selector: #tab-flight-tab-hp]
+09/05/2019 12:00:29 devpinoyLogger Clicking on an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> css selector: #flight-type-roundtrip-label-hp-flight]
+09/05/2019 12:00:30 devpinoyLogger Clicking on an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> css selector: #flight-origin-hp-flight]
+09/05/2019 12:00:30 devpinoyLogger Typing in an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> css selector: #flight-origin-hp-flight] and the entered value is: Kolkata
+09/05/2019 12:00:31 devpinoyLogger Clicking on an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> css selector: #flight-destination-hp-flight]
+09/05/2019 12:00:31 devpinoyLogger Typing in an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> css selector: #flight-destination-hp-flight] and the entered value is: Mumbai
+09/05/2019 12:00:32 devpinoyLogger Typing in an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> xpath: //input[@id='flight-departing-hp-flight']] and the entered value is: 12/05/2019
+09/05/2019 12:00:32 devpinoyLogger Typing in an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> xpath: //input[@id='flight-returning-hp-flight']] and the entered value is: 15/05/2019
+09/05/2019 12:00:33 devpinoyLogger Clicking on an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> css selector: #traveler-selector-hp-flight > div > ul > li > button]
+09/05/2019 12:00:33 devpinoyLogger Clicking on an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> xpath: (//*[@class='uitk-step-input-button uitk-step-input-plus'])[1]]
+09/05/2019 12:00:33 devpinoyLogger Clicking on an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> xpath: (//*[@class='uitk-step-input-button uitk-step-input-plus'])[1]]
+09/05/2019 12:00:33 devpinoyLogger Clicking on an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> xpath: (//*[@class='uitk-step-input-button uitk-step-input-plus'])[2]]
+09/05/2019 12:00:33 devpinoyLogger Clicking on an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> xpath: (//*[@class='uitk-step-input-button uitk-step-input-plus'])[2]]
+09/05/2019 12:00:34 devpinoyLogger Typing in an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> xpath: (//select[@id='flight-age-select-1-hp-flight'])[1]] and the entered value is: 12
+09/05/2019 12:00:34 devpinoyLogger Typing in an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> xpath: (//select[@id='flight-age-select-2-hp-flight'])[1]] and the entered value is: 9
+09/05/2019 12:00:40 devpinoyLogger Clicking on an element: [[ChromeDriver: chrome on XP (3fba01e5be5c93636c3c33b8e8b8fd32)] -> xpath: (//*[@class='btn-primary btn-action gcw-submit'])[1]]

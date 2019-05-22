@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Customer Test Suite]">
+  <test thread-count="5" name="Add Customer Test(failed)">
+    <classes>
+      <class name="com.w2a.suite.customer.test.AddCustomerTest">
+        <methods>
+          <include name="addCustomerTest" invocation-numbers="2"/>
+        </methods>
+      </class> <!-- com.w2a.suite.customer.test.AddCustomerTest -->
+    </classes>
+  </test> <!-- Add Customer Test(failed) -->
+  <test thread-count="5" name="Open Account Test(failed)">
+    <classes>
+      <class name="com.w2a.suite.customer.test.OpenAccountTest">
+        <methods>
+          <include name="openAccountTest" invocation-numbers="0 1 2 3"/>
+        </methods>
+      </class> <!-- com.w2a.suite.customer.test.OpenAccountTest -->
+    </classes>
+  </test> <!-- Open Account Test(failed) -->
+</suite> <!-- Failed suite [Customer Test Suite] -->

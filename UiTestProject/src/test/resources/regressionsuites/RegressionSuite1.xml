@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Data Driven Example">
+
+
+	<listeners><!-- This listener implements reportng -->
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+		<listener class-name="com.test.listeners.TestListeners"></listener>
+	</listeners>
+
+	<test thread-count="5" name="Automation Employee Record Creation Test">
+		<classes>
+			<class name="com.test.testcates.AutomationCheckTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="Manual Employee Record Creation Test">
+		<classes>
+			<class name="com.test.testcates.ManualCheckTest" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

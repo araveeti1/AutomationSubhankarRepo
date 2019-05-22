@@ -1,0 +1,18 @@
+<locators>
+	<homepage>
+		<header>
+			<username>
+				<!-- The syntax to provide any locator here is ![CDATA[locator]] -->
+				<css>#Email</css>
+				<xpath>//input[@id='Email']</xpath>
+				<id>Email</id>
+			</username>
+			<password>
+			<!-- The syntax to provide any locator here is ![CDATA[locator]] -->
+				<css>#Passwd</css>
+				<xpath>//input[@id='Passwd']</xpath>
+				<id>[Passwd]</id>
+			</password>
+		</header>
+	</homepage>
+</locators>

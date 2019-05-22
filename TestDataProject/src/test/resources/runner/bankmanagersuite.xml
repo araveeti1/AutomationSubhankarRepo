@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Bank Manager Test Suite">
+
+	<test thread-count="5" name="Add Customer Test">
+		<classes>
+			<class name="com.w2a.suite.bankmanager.test.AddCustomerTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test thread-count="5" name="Open Account Test">
+		<classes>
+			<class name="com.w2a.suite.bankmanager.test.OpenAccountTest" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
