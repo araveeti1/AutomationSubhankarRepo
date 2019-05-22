@@ -1,0 +1,125 @@
+What is Cucumber?
+
+Ans: Cucumber is a tool that supports Behavior Driven Development (BDD). It offers a way to write tests that anybody can understand, regardless of their technical knowledge. 
+In BDD, users (business analysts, product owners) first write scenarios or acceptance tests that describes the behavior of the system from the customer's perspective, for review and sign-off by the product owners before developers write their codes. 
+
+Advantages of Cucumber
+
+-->    It is helpful to involve business stakeholders who can't easily read code
+-->    Cucumber Testing focuses on end-user experience
+-->    Style of writing tests allow for easier reuse of code in the tests
+-->    Quick and easy set up and execution
+-->    Efficient tool for testing
+
+
+What is Behaviour Driven Framework?
+
+Ans: Consider you are assigned to create Funds Transfer module in a Net Banking application.
+
+There are multiple ways to test it
+
+(i)     Fund Transfer should take place if there is enough balance in source account
+(ii)    Fund Transfer should take place if the destination a/c details are correct
+(iii)   Fund Transfer should take place if transaction password / rsa code / security authentication for the transaction entered by user us correct
+(iv)    Fund Transfer should take place even if it's a Bank Holiday
+(v)     Fund Transfer should take place on a future date as set by the account holder
+
+The Test Scenario become more elaborate and complex as we consider additional features like transfer amount X for an interval Y days/months , stop schedule transfer when the total amount reaches Z , and so on
+
+The general tendency of developers is to develop features and write test code later. As, evident in above case, Test Case development for this case is complex and developer will put off Testing till release , at which point he will do quick but ineffective testing.
+
+To overcome this issue (Behavior Driven Development) BDD was conceived. It makes the entire testing process easy for a developer. In BDD, whatever you write must go into Given-When-Then steps. Lets consider the same example above in BDD.
+
+example:
+--------
+Given that a fund transfer module in net banking application has been developed
+And I am accessing it with proper authentication
+
+When I shall transfer with enough balance in my source account
+Or I shall transfer on a Bank Holiday
+Or I shall transfer on a future date
+And destination a/c details are correct
+And transaction password/rsa code / security authentication for the transaction is correct
+And press or click send button
+
+Then amount must be transferred
+And the event will be logged in log file
+
+
+
+The Jars Required:
+(1) 
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>4.2.3</version>
+    <scope>test</scope>
+</dependency>
+
+(2)
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>4.2.3</version>
+</dependency>
+
+(3)
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>4.2.3</version>
+</dependency>
+
+(4)
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>4.2.3</version>
+</dependency>
+
+(5) 
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-jvm-deps</artifactId>
+    <version>1.0.6</version>
+    <scope>provided</scope>
+</dependency>
+
+(6)
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-html -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-html</artifactId>
+    <version>0.2.7</version>
+</dependency>
+
+(7)
+<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>gherkin</artifactId>
+    <version>5.1.0</version>
+</dependency>
+
+(8)
+<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin-jvm-deps -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>gherkin-jvm-deps</artifactId>
+    <version>1.0.4</version>
+</dependency>
+
+(9)
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java8 -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java8</artifactId>
+    <version>4.2.3</version>
+</dependency>
+
+

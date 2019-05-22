@@ -1,0 +1,103 @@
+Access Modifiers:
+-----------------
+Access modifier specifies access level of a Java Component.
+
+There are four access modifiers present in java.
+(1) Public
+(2) Private
+(3) Default
+(4) Protected
+
+It can be divided into two categories:
+(i) Class Level
+(ii)Method/Member Level
+
+(i) Class Level:
+    ------------
+							      |-------> Public
+Classes can be defined with two types of access modifiers.--> |
+							      |-------> Default
+
+
+(ii) Method/Member Level:
+     --------------------
+
+Method can be defined with all the four types of access modifiers.
+(1) Public - If a method/member is defined with Public access modifer, it is accessible in the whole java world.
+(2) Private - If a method/member is defined with Private access modifer, it is only accessible under the class it is defined.
+(3) Default - If a method/member is defined with no access modifers, it will be treated as it is defined with Default access modifier 
+	      implicitly and is accessible in its package only.
+(4) Protected - If a method/member is defined with Protected access modifer, it is accessible under the package it is defined. 
+		But it can be accessed from outside using inheritance.
+
+
+
+==================================================================================================================================================
+
+Inheritance:
+------------
+
+What is Inheritance?
+
+--> One class object will inherit the property of another class.
+
+*Suppose we have a class 'Test' as below-
+
+public class Test{
+
+public int publicVariable= 50;
+protected int protectedVariable= 40;
+private int privateVarible=30;
+int defaultVariable=20;
+
+}
+
+*Suppose we have another class called 'Sample'. Here we are trying to access a varible declared in 'Test' class by an object of the current class. \
+Which we won't be able to do.
+
+public class Sample{
+
+public static void main(String[] args){
+
+Test obj = new Test();
+System.out.println(obj.publicVariable); --> This will work.
+System.out.println(obj.protectedVariable); --> This will not work.
+System.out.println(obj.privateVarible); --> This will not work.
+System.out.println(obj.defaultVariable); --> This will not work.
+
+Sample s = new Sample();
+System.out.println(s.publicVariable); --> This will not work.
+  
+	}
+
+}
+
+
+This scenario can only be a possibility, while we implement Inheritance.
+
+To use Inheritance, we do use two keywords-->
+(i) extends --> Whenever any class inherits another class, we use 'extends' keyword.
+and
+(ii) implements --> Whenever any class inherits an interface, we use 'implements' keyword.
+
+
+Following example shows the inheritance concept.
+
+public class Sample extends Test{
+
+public static void main(String[] args){
+
+Test obj = new Test();
+System.out.println(s.publicVariable); --> This will work.
+
+
+Sample s = new Sample();
+System.out.println(s.publicVariable); --> This will not work.
+  
+	}
+
+}
+
+
+
+

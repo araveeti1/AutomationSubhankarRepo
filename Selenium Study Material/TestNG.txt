@@ -1,0 +1,67 @@
+What is TestNG?
+---------------
+
+TestNG (Test Next Generation) is the testing framework. TestNG is inspired from JUnit and NUnit, but it has a new functionality that makes this framework more powerful and easier. TestNG is designed in such a way that it covers all the categories of tests comprising unit, functional and integration. 
+
+
+Annotations:
+------------
+
+@Test: Marks a class or a method as a part of the test.
+
+@BeforeMethod: A method which is marked with this annotation will be executed before every @test annotated method.
+
+@AfterMethod: A method which is marked with this annotation will be executed after every @test annotated method.
+
+@BeforeClass: A method which is marked with this annotation will be executed before first @Test method execution. It runs only once per class.
+
+@AfterClass: A method which is marked with this annotation will be executed after all the test methods in the current class have been run
+
+@BeforeTest: A method which is marked with this annotation will be executed before first @Test annotated method.
+
+@AfterTest: A method which is marked with this annotation will be executed when all @Test annotated methods complete the execution of those classes which are inside <test> tag in testng.xml file.
+
+@BeforeSuite: A method which is marked with this annotation will run only once before all tests in the suite have run
+
+@AfterSuite: A method which is marked with this annotation will run once after execution of all tests in the suite have run
+
+@BeforeGroups: This annotated method will run before the first test run of that specific group.
+
+@AfterGroups: This annotated method will run after all test methods of that group completes its execution.
+
+Some other TestNG Annotations, we need to discuss here are mentioned below:
+
+@Parameters: This annotation is used to pass parameters to test methods.
+
+@DataProvider: If we use @DataProvider annotation for any method that means you are using that method as a data supplier. The configuration of @DataProvider annotated method must be like it always return Object[][] which we can use in @Test annotated method. The @Test method that wants to receive data from this DataProvider needs to use a dataProvider name equals to the name of this annotation.
+
+@Factory: Marks a method as a factory that returns objects that will be used by TestNG as Test classes. The method must return Object[ ].
+
+@Listeners: This annotation is used with test class. It helps in writing logs and results.
+
+
+
+Benefits of Using TestNG Annotations:
+-------------------------------------
+Following are some of the benefits of using annotations:
+
+(1)     TestNG identifies the methods it is interested in, by looking up annotations. Hence, method names are not 		restricted to any pattern or format.
+(2)    	We can pass additional parameters to annotations.
+(3)    	Annotations are strongly typed, so the compiler will flag any mistakes right away.
+(4)    	Test classes no longer need to extend anything (such as TestCase, for JUnit 3).
+
+
+Execution process is as follows:
+--------------------------------
+
+First of all, beforeSuite() method is executed only once.
+
+Lastly, the afterSuite() method executes only once.
+
+Even the methods beforeTest(), beforeClass(), afterClass(), and afterTest() methods are executed only once.
+
+beforeMethod() method executes for each test case but before executing the test case.
+
+afterMethod() method executes for each test case but after executing the test case.
+
+In between beforeMethod() and afterMethod(), each test case executes.

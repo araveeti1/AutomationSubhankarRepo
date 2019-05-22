@@ -1,0 +1,174 @@
+/*
+* Locator Tutorial
+* @Author: Subhankar Mukherjee.
+*
+*/
+
+
+There are 8 major locators in Selenium:
+(1) id,
+(2) css selector,
+(3) xpath,
+(4) linktext,
+(5) partial linktext,
+(6) name,
+(7) tagname,
+(8) classname
+
+The most widely used are 'xpath' and 'css selector'.
+
+xpath:
+======
+
+The basic syntaxfor xpath is==> //tagname[@attribute='value']
+
+Absolute and Partial xpath generally created from the root of the DOM and it is locaton based.
+
+Relative xpath is created with referencial value, we need not to travel form the root node and is more effective as it can be easily updated whenever, there is a change in the DOM.  
+
+We can derive xpath of an element using multiple attributes.
+e.g: //input[@name=user-name][@id='identifier-id'][@type=email]
+or,  //input[@name=user-name and @id='identifier-id']
+
+In many cases, multiple elements in the webpage might have same attributes or dynamicwebelemnts. To locate them, there are many approaches.
+(i) By indexing, when the element is not dynamic --> (//input[@name=user-name][@id='identifier-id'])[1] --> For first element
+                   				     (//input[@name=user-name][@id='identifier-id'])[2] --> For second element
+(ii) When the element is dynamic -->
+(a) //input[starts-with(@id,'value')]
+(b) //input[contains(@id,'value')]
+(c) //input[contains(text(),'partial value')]
+
+(iii) We first need to clarify Parent,Child and Sibling Element concept.
+
+<div class="zl-each-apps-container">
+	<a href="https://crm.zoho.in?src=zohohome" target="_blank" rel="noopener" onclick="Home.trackEvent(&quot;crm&quot;, &quot;mostpopularapps&quot;)">
+		<span class="zicon-apps-48 zicon-apps-crm"></span>
+		<p class="zl-app-title">CRM</p>
+	</a>
+	<br>
+	<p class="zl-app-content">Attract, retain and delight more customers. Grow your business now with Zoho CRM.</p>
+</div>
+
+Here in '<div class="zl-each-apps-container">', div is the Parent element.
+Here '<a href="https://crm.zoho.in?src=zohohome".....>' and '<p class="zl-app-content">' are the childs of '<div class="zl-each-apps-container">'.
+Now, '<a href="https://crm.zoho.in?src=zohohome".....>' and '<p class="zl-app-content">' are siblings.
+
+From the perspective of '<a href="https://crm.zoho.in?src=zohohome".....>', '<p class="zl-app-content">' is a following sibling.
+From the perspective of '<p class="zl-app-content">', '<a href="https://crm.zoho.in?src=zohohome".....>' is a preceding sibling.
+
+If form a child element, we want to move to its' parent element, we can use multiple ways.
+e.g: //*[@class='zl-app-content'])/..   --> From child '<p class="zl-app-content">' to parent '<div class="zl-each-apps-container">'
+     //*[@class='zl-app-content'])/parent::div --> From child '<p class="zl-app-content">' to parent '<div class="zl-each-apps-container">'
+
+Lets take an example-
+<div class="ckued-oierf" jsname="DWPKW">
+  <div class="wncbd-1mn76">
+    <div class="awert-9kjh2">
+	<div class="asdfg-uytre">
+		<div class="1uyte-uy56m">
+		<div class="qsdwn-542mna">
+		<div class="prnxs-qi54m">
+	</div>
+     </div>
+   </div>
+</div>
+
+Now if we need to traverse throug the elements from parents to childs, we may follow the below pattern.
+//div[@class='asdfg-uytre']/div[1] --> This will locate the element '<div class="1uyte-uy56m">'.
+//div[@class='asdfg-uytre']/div[3] --> This will locate the element '<div class="prnxs-qi54m">'
+
+Now for '<div class="prnxs-qi54m">' element, '<div class="1uyte-uy56m">' is a preceeding sibling. So to traverse from 3rd to 1st sibling, we can write-
+//div[class='asdfg-uytre']/div[3]/preceeding-sibling::div[2] --> This indexing [2] indicates that,it is locating a sibling who is located at two steps above from the current sibling. For an immidiate sibling, who is just above the current element,indexing should have been [1] and so on.
+Now, if I want to move to ffirst sibling in the hierarchy to the third sibling,
+//div[class='asdfg-uytre']/div[1]/following-sibling::div[2]
+
+If you want to move back to the parent, //div[class='asdfg-uytre']/div[1]/parent::div
+
+Sometimes multiple parent classes also may have same attributes and may be attached in the DOM in different hierarchy. So we need to traverse one by one step backward, until we find a xpath that indicates an unique element. While doing so, we must consider all the attributes and values. One of the attributes in the hierarchy, will always be unique.
+//div[@jsname='DWPKW']/div/div/div[@class='asdfg-uytre']/div[1]
+
+
+css selector:
+=============
+
+Basic syntax for css selector is -->
+
+tagnme[attribute='value']
+
+eg: input[class='login']
+
+We can concatenate attributes to locate any elements.
+
+eg: input[class='login'][type='email'][id='identifierID']
+
+
+(a) Here also we can locate elements, that are dynamic in nature.
+
+(i) starts-with: As it was in xpath, we can use this parameter for any dynamic value, that has first part as constant and the last part as dynamic,attached to any attribute.
+
+Here we use '^' sign to denote starts-with parameter.
+
+eg: input[id^='identifi']
+
+(ii) ends-with: We can use this parameter for any dynamic value, that has last part as constant and the first part as dynamic,attached to any attribute.
+
+Here we use '$' sign to denote ends-with parameter. 
+
+eg: input[id$='tifierID']
+
+(iii) contains: We can use this parameter for any dynamic value, that has first part and the last part as dynamic and have some constant value in the middle,attached to any attribute.
+
+Here we use '*' sign to denote contains parameter.
+
+eg: input[id*='tifier']
+
+(b) The easiest way to locate an element in the DOM using css selector is by using ID attribute.
+
+In css selector, ID starts with '#'.
+
+e.g:  Lets say there is an input tag as below, which represents a text input box.
+<input class='login' type='email' id='identifierID'></input>
+
+Now if I want to create a css selector to select this text box, we can write--> #identifierID or input#identifierID .
+
+(c) Another way to easily locate an element in the DOM using css selector is by using class attribute.
+
+In css selector, class starts with '.'   .
+
+eg: Lets say there is an input tag as below, which represents a text input box.
+<input class='login' type='email' id='identifierID'></input>
+
+Now if I want to create a css selector to select this text box, we can write--> .login .
+
+(d) Combination of ID and class attributes to locate an unique element.
+
+e.g:  Lets say there is an input tag as below, which represents a text input box.
+<input class='login email' type='email' id='identifierID'></input>
+
+So, the css selector will be --> input#identifierID.login.email[type='email]
+N.B: For every space in class name, the space should be replaced with '.' while creating the css selector.
+
+(e) How to locate child element?
+
+Lets consider an example--
+	<div class="asdfg uytre">
+		<div class="1uyte uy56m">
+		<div class="qsdwn 542mna">
+		<div class="prnxs qi54m">
+	</div>
+
+Here '<div class="asdfg uytre">' is parent and '<div class="1uyte uy56m">' is the child element.
+
+To locate the child-->
+
+div.asdfg.uytre > div.1uyte.uy56m
+N.B: For every space in class name, the space should be replaced with '.' while creating the css selector.
+
+We can use the below concept also to locate the child elements-->
+div.asdfg.uytre > div:first-child --> To locate the first child element.
+div.asdfg.uytre > div:last-child --> To locate the second child element.
+div.asdfg.uytre > div:nth-child(n) {n= 1,2,3,.....} --> To locate the nth child element.
+
+Sometimes multiple parent classes also may have same attributes and may be attached in the DOM in different hierarchy. So we need to traverse one by one step backward, until we find a css selector that indicates an unique element. While doing so, we must consider all the attributes and values. One of the attributes in the hierarchy, will always be unique.
+div[jsname='DWPKW'] > div > div > div.asdfg.uytre > div:nth-child(n)
+

@@ -1,0 +1,87 @@
+JMeter
+======
+
+It is an open source tool, that is used for Load Testing and Stress Testing.
+
+Load Testing:
+-------------
+-------------
+
+It is a process of handling multiple data i/o simultaneously at the same time.
+e.g: In some popular social media application, multiple users do login at the same time and the application seres them all. To check that thisfunctionality is working properly, we perform a load test onthe application.
+
+
+Stress Testing:
+---------------
+---------------
+
+It is a process of performing load testing when the resources are limited, in terms of hardware as well as other sections.
+
+
+Elements of Jmeter:
+-------------------
+-------------------
+
+(1) Thread Group:
+    -------------
+
+Thread group is generally a collection of threads. Each thread in the thread group represents a user, using the application under test. The number of threads for each group can be defined.
+				Request1
+	    |--------- User 01 ----------> 	-----------------	
+	    |--------- User 02	 '		|Application	|
+	    |--------- User 03	 '		|Under		|
+Thread------|	'		 '		|Test		|
+Group	    |	'		Request100	|		|
+	    |--------- User 100	---------->	----------------- 
+
+
+e.g: In the aboe example we hae created 100 Threads, under the thread group. This will simulate that 100 users are trying to access the application under test.
+
+(2) Samplers:
+    ---------
+
+The sampler defines the type of request and sends the information to thread group to process further.
+There are different type of samplers-
+
+(i) FTP Request: If we want to perform a task o FTP server, we can use this FTP Request Sampler to do this task. This sampler sends a download or upload file request in a FTP server.
+
+(ii) HTTP Request: If we want to work with a http or https request, this HTTP Request sampler is used. We can send a HTTP Request sampler to a website through JMeter and it will return HTTP components of the web application like HTML codes, images etc.
+
+(iii) JDBC Request: It is used to perform Database performance testing. When called, this sampler sends a JDBC request to the database.
+
+(iv) BSF Sampler: It allows us to write a sampler using BSF scripting language.
+
+(v) Access Log Sampler: It allows us to read access logs and generate HTTP request. The log could be HTML, CSS etc
+
+(vi) SMTP Sampler: To test a email server, SMTP sampler is used. This sampler is used to transmit emails through SMTP protocols.
+
+(3) Listners:
+    ---------
+
+Listners show the result of the test execution. They can show the test results in different formats-
+
+(i) Graph: It shows up the server response time in a graph format.
+	
+(ii) Table: It shows the summary of atest result in a table format.
+
+(iii) Tree: It shows up the user request results in a basic HTML format.
+
+(iv) Log: It shows the summary of the test result in a text format.
+
+(4) Configuration Element:
+    ----------------------
+
+It sets up default and variables for the later use by the samplers.
+
+(i) CSV Data Set Config: If we want to test a web apllication, where 100 users can login at the same time with different credentials, we need to record or store the script 100 times. We can parameterize the script to read and enter the data from a text file. CSV Data Set Config helps to read the data from the text file and split them into variables.  
+
+(ii) HTTP Cookie Manager: If you have a HTTP request and the response contains a cookie, the Cookie Manager stores that cookie and use it for all future requests on that particular website. 
+
+(iii) HTTP Request Default: We also have a HTTP request default, this element lets you set the default values that your HTTP request controller use. e.g: While we are sending 100 HTTP requests to google.com, we might need to write server name=google.com 100 times. Instead of that, we can simply add one HTTP request default with serer ame or IP field.
+
+(iv) Login Config Element: It helps to add or override login username or password setings in samplers. e.g: If we want to simulate a login in facebook using a user id and password, we can use this login config to define the same in the user request.
+
+(v) FTP Request Default:
+
+
+   
