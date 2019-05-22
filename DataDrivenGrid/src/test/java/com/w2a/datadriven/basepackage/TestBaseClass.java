@@ -10,7 +10,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.apache.poi.util.SystemOutLogger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
@@ -42,6 +41,7 @@ public class TestBaseClass {
 	// For creating unique threads while running parallel test cases.
 	public static ThreadLocal<RemoteWebDriver> remotedr = new ThreadLocal<RemoteWebDriver>();
 	
+
 	// While working with Grid, we don't just use WebDriver. We generally use a
 	// RemoteWebDriver. As we execute our test cases in remote browsers.
 	public static RemoteWebDriver driver = null;
