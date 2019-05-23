@@ -7,7 +7,7 @@ public class InheritanceExample {
 		 * Single Inheritance, 
 		 * Multiple Inheritance, 
 		 * Multilevel Inheritance,
-		 * Hybrid Inheritance,
+		 * Hybrid Inheritance(Combination of Multiple and other types of Inheritance),
 		 * Hierarchical Inheritance
 		 * 
 		 * In java, inheritance is applied in two levels-
@@ -25,6 +25,13 @@ public class InheritanceExample {
 		 * Single Inheritance, 
 		 * Multilevel Inheritance,
 		 * Hierarchical Inheritance.
+		 * 
+		 * At Interface level the possible scenarios of Inheritance are-
+		 * Single Inheritance, 
+		 * Multilevel Inheritance,
+		 * Hierarchical Inheritance,
+		 * Multiple Inheritance.
+		 * 
 		 * 
 		 */
 }
