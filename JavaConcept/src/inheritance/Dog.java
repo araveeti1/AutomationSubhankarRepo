@@ -16,4 +16,7 @@ public class Dog extends Animal {
 		// could access the property of the superclass.
 		obj.sound();
 	}
+	public void sound() {
+		System.out.println("Bhow Bhow");
+	}
 }
