@@ -6,6 +6,14 @@ public class Bank {
 	private int pinNum = 1478;
 	private double balanceAmount = 2000000;
 
+	public double getBalanceAmount() {
+		return balanceAmount;
+	}
+
+	public void setBalanceAmount(double balanceAmount) {
+		this.balanceAmount = balanceAmount;
+	}
+
 	public void withdrawAmount(int accNum, int pin, int amount) {
 		// TODO Auto-generated method stub
 
