@@ -5,6 +5,9 @@ public class Child extends Parent{
 	}
 	public void display() {
 	}
+	public static void add() {
+		System.out.println("add - Child");
+	}
 	public static void main(String[] args) {
 		Parent obj = new Child();
 		obj.show();
