@@ -1,0 +1,4 @@
+(Q1) Can we change the access modifier when overriding?
+Ans: Yes we change the access modifier but we can not reduce the visibility.
+
+(Q2)

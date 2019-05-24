@@ -12,4 +12,14 @@ public class RBIOverriding {
 
 		return 10.5;
 	}
+	
+	public RBIOverriding getObject() {
+		
+		RBIOverriding obj = new RBIOverriding();
+		return obj;
+	}
+	
+	public Number show() {
+		return 10;
+	}
 }

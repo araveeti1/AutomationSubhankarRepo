@@ -12,5 +12,9 @@ public class HSBC extends RBIOverriding {
 
 		return 9.75;
 	}
+	
+	public Integer show() {
+		return 10;
+	}
 
 }

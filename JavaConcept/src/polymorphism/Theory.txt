@@ -30,6 +30,9 @@ It is not going to change at runtime. So it is called as Static Binding.
 Ans: There are two possibilities. 
 
 	(i)	No --> When return types are primitive(boolean, byte, char, short, int, long, float and double).
+	(ii) Yes --> When return types are Class Name/Co-variant.
+	[Co-variant: When return types are Class Name and there is a parent-child relationship between those classes.]
+
 
 (b) Late Binding--> It binds after running the code. So it is called late binding.
 

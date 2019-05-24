@@ -6,11 +6,18 @@
 	<artifactId>CucumberWithPOM</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
+		<!-- <dependency> -->
+		<!-- <groupId>com.aventstack</groupId> -->
+		<!-- <artifactId>extentreports-cucumber4-adapter</artifactId> -->
+		<!-- <version>1.0.6</version> -->
+		<!-- </dependency> -->
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports-cucumber4-adapter -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports-cucumber4-adapter</artifactId>
-			<version>1.0.6</version>
+			<version>1.0.7</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.vimalselvam/cucumber-extentsreport -->
 		<dependency>
 			<groupId>com.vimalselvam</groupId>
