@@ -1,0 +1,13 @@
+Polymorphism- Same name+Multiple forms(action/behaviour)
+
+Types of Polymorphism- 
+
+(1) Compile Time Polymorphism/Early Binding/Static Binding/Overloading
+
+(a) Overloading--> Same method name but different signature. 
+	i.e- In a single class, we have multiple methods with same name but different method signatures.
+
+** What is a method signature?
+
+(2) Runtime Polymorphism/ Late Binding/ Dynamic Binding/ Overriding
+
