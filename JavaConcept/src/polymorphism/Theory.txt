@@ -8,6 +8,12 @@ Types of Polymorphism-
 	i.e- In a single class, we have multiple methods with same name but different method signatures.
 
 ** What is a method signature?
+Ans: A method signature is generally the parameters that differentiate two methods with same name.
+So while calling the method, we can choose which one to call by differentiating the parameters passed.
+
+** Can we achieve Overloading by keeping the method signature same and changing the return type?
+Ans: No. It is not possible. Only change in parameters/arguments will differentiate two methods with same name 
+and thus we can achieve overloading.
 
 (2) Runtime Polymorphism/ Late Binding/ Dynamic Binding/ Overriding
 
