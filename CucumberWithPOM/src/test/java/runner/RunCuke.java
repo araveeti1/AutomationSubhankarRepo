@@ -7,13 +7,11 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 import pages.base.Constants;
 
 @CucumberOptions(plugin = { "json:target/RunCuke/cucumber.json", "pretty", "html:target/RunCuke/cucumber.html",
-		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, features = "src/test/resources/features/", glue = "steps", tags = {
-				"@Search-Cars, @Used-Cars-Search" })
+		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, features = "src/test/resources/features/", glue = "steps", tags = "@Search-Cars, @Used-Cars-Search")
 public class RunCuke extends AbstractTestNGCucumberTests {
 
 	@BeforeClass
 	public static void writeExtentReport() {
-
 		// Configure extent report using 'cucumber.adapter.ExtentCucumberAdapter' for
 		// cucumber version 4 as the old extent cucumber formatter does not work with
 		// cucumber V4 anymore.
