@@ -1,0 +1,40 @@
+Collections- Framework/API(Interfaces and Classes)
+=================================================
+-------
+Arrays: 
+-------
+Used to store multiple values.
+1) The size of an array is fixed.
+2) It can contain only one type of data.
+e.g: If we are defining the array with String type of data, only String type of data can be inserted into the array.
+Even if we want to put some numerical datas in it, we have to put it in as String. 
+3) There is no type casting issues as it supports only one type of data.
+
+------------
+Collections:
+------------
+Collection is an interface in Java belonging to java.util.Collection .
+Collections is a class in Java belonging to java.util.Collections .
+
+1) The size is practically infinite.
+2) It can contain multiple types of data.
+
+The important classes of collection API are--
+
+(i) Maps - 	(a) HashMap
+		(b) Hashtable
+		(c) TreeMap
+		(d) LinkedHashMap
+
+(ii) Sets- 	(a) HashSet
+		(b) LinkedHashSets
+		(c) TreeSet
+
+(iii) List-	(a) ArrayList
+		(b) Vector
+		(c) LinkedList
+
+(iv) Queues-	(a) PriorityQueue
+
+(v) Utilities-	(a) Collections
+		(b) Arrays  
