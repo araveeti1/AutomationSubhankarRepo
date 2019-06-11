@@ -10,7 +10,7 @@ import pages.base.Constants;
 
 public class SeleniumDriverClass {
 
-	// Defining a class referrence
+	// Defining a class reference
 	private static SeleniumDriverClass seleniumDriver;
 
 	// Initialize the Webdriver

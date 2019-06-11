@@ -17,7 +17,6 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.14.3</version>
-			<scope>compile</scope>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.dom4j/dom4j -->
@@ -56,7 +55,7 @@
 			<groupId>org.uncommons</groupId>
 			<artifactId>reportng</artifactId>
 			<version>1.1.4</version>
-			<scope>compile</scope>
+
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.google.inject/guice -->
 		<dependency>
@@ -102,11 +101,18 @@
 			<version>8.0.15</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<!-- <dependency> -->
+		<!-- <groupId>com.aventstack</groupId> -->
+		<!-- <artifactId>extentreports</artifactId> -->
+		<!-- <version>3.1.5</version> -->
+		<!-- </dependency> -->
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
-			<version>3.1.5</version>
+			<version>4.0.9</version>
 		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>

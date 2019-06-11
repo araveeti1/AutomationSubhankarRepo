@@ -1,14 +1,9 @@
-22/04/2019 00:08:27 devpinoyLogger Config File Loaded !!!
-22/04/2019 00:08:27 devpinoyLogger Object File Loaded !!!
-22/04/2019 00:08:35 devpinoyLogger Chrome launched !!!
-22/04/2019 00:09:11 devpinoyLogger Clicking on an element: gotologin_CSS
-22/04/2019 00:09:12 devpinoyLogger Typing in an element: emailid_CSS and the entered value is: subhamukh007@yahoo.in
-22/04/2019 00:09:13 devpinoyLogger Typing in an element: password_CSS and the entered value is: Rocksubh@007
-22/04/2019 00:09:13 devpinoyLogger Clicking on an element: checkbox_CSS
-22/04/2019 00:09:13 devpinoyLogger Clicking on an element: submitbtn_CSS
-22/04/2019 00:09:20 devpinoyLogger Clicking on an element: gotocrm_XPATH
-22/04/2019 00:09:31 devpinoyLogger Clicking on an element: gotoaccounts_CSS
-22/04/2019 00:09:33 devpinoyLogger Clicking on an element: gotocreateaccounts_XPATH
-22/04/2019 00:09:34 devpinoyLogger Typing in an element: createaccount_CSS and the entered value is: ABCD_TEST
-22/04/2019 00:09:36 devpinoyLogger Clicking on an element: usericon_CSS
-22/04/2019 00:09:48 devpinoyLogger Clicking on an element: signout_LINKTEXT
+09/06/2019 19:49:17 devpinoyLogger Config File Loaded !!!
+09/06/2019 19:49:17 devpinoyLogger Object File Loaded !!!
+09/06/2019 19:49:24 devpinoyLogger Chrome launched !!!
+09/06/2019 19:49:34 devpinoyLogger Clicking on an element: gotologin_CSS
+09/06/2019 19:49:35 devpinoyLogger Typing in an element: emailid_CSS and the entered value is: subhamukh007@yahoo.in
+09/06/2019 19:49:35 devpinoyLogger Typing in an element: password_CSS and the entered value is: Rocksubh@007
+09/06/2019 19:49:35 devpinoyLogger Clicking on an element: checkbox_CSS
+09/06/2019 19:49:36 devpinoyLogger Clicking on an element: submitbtn_CSS
+09/06/2019 19:49:42 devpinoyLogger Clicking on an element: gotocrm_XPATH
