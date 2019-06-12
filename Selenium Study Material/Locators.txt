@@ -20,7 +20,9 @@ The most widely used are 'xpath' and 'css selector'.
 xpath:
 ======
 
-The basic syntaxfor xpath is==> //tagname[@attribute='value']
+The basic syntax for xpath is==> //tagname[@attribute='value']
+
+To locate xpath using chrome console $x("//tagname[@attribute='value']")
 
 Absolute and Partial xpath generally created from the root of the DOM and it is locaton based.
 
@@ -96,6 +98,8 @@ Basic syntax for css selector is -->
 tagnme[attribute='value']
 
 eg: input[class='login']
+
+To locate css selector using chrome console $$("tagname[attribute='value']")
 
 We can concatenate attributes to locate any elements.
 

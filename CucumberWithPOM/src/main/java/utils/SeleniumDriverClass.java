@@ -19,7 +19,7 @@ public class SeleniumDriverClass {
 	// Defining explicit-wait
 	private static WebDriverWait wait;
 
-	// The constructor is private as we do not want to create an instant of it
+	// The constructor is private as we do not want to create an instance of it
 	// everytime, whenever it is referenced.
 	private SeleniumDriverClass() {
 
